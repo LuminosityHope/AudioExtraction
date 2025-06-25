@@ -9,7 +9,7 @@ std::vector<float> convertToFloat(const std::vector<_int32>& signal) {
 
     std::vector<float> result(signal.size());
     for (size_t i = 0; i < signal.size(); ++i) {
-        result[i] = signal[i] / max_val; // Нормализация в [-1.0, 1.0]
+        result[i] = signal[i] / max_val; 
     }
     return result;
 }
