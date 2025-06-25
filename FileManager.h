@@ -19,14 +19,14 @@ public:
 		file.seekg(0, std::ios::end);
 		size_t SizeOfFIle = file.tellg();
 		file.seekg(0, std::ios::beg);
-		std::vector<T> Signal(SizeOfFIle / sizeof(T));
-		file.read(reinterpret_cast<char*>(Signal.data()), SizeOfFIle);
+		std::vector<T> signal(SizeOfFIle / sizeof(T));
+		file.read(reinterpret_cast<char*>(signal.data()), SizeOfFIle);
 		if (!file)
 		{
 			std::cout << "File error - can't open to read data!";
 		}
 		file.close();
-		return  Signal;
+		return  signal;
 	}
 
 	template <typename T>
