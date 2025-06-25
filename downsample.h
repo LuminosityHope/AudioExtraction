@@ -7,11 +7,11 @@
 template <typename T>
 std::vector<T> DownSample(std::vector<T>& signal, size_t sampling_order)
 {
-	std::vector<T> OutPutSignal; 
-	OutPutSignal.reserve((signal.size() + sampling_order - 1) / 16);
+	std::vector<T> output;
+	output.reserve((signal.size() + sampling_order - 1) / 16);
 	for (size_t i = 0; i < signal.size(); i += sampling_order)
 	{
-		OutPutSignal.emplace_back(signal[i]);
+		output.emplace_back(signal[i]);
 	}
-	return OutPutSignal;
+	return output;
 }
