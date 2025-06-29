@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.16)
 project(CMakeAudio LANGUAGES CXX)
 
-# Настройки компилятора
+# ГЌГ Г±ГІГ°Г®Г©ГЄГЁ ГЄГ®Г¬ГЇГЁГ«ГїГІГ®Г°Г 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-# Для всех платформ устанавливаем единую выходную директорию
+
 file(MAKE_DIRECTORY "${OUTPUT_DIR}")
 file(MAKE_DIRECTORY "${CMAKE_ARCHIVE_OUTPUT_DIRECTORY}")
 set(OUTPUT_DIR "${CMAKE_BINARY_DIR}/bin")
@@ -18,30 +18,30 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
 add_subdirectory("extern/googletest-1.17.0")
 add_subdirectory("tests")
 
-# Все исходные файлы
+# Г‚Г±ГҐ ГЁГ±ГµГ®Г¤Г­Г»ГҐ ГґГ Г©Г«Г»
 set(SOURCES
-    "src/CMakeAudio.cpp"  # Главный файл с main()
+    "src/CMakeAudio.cpp"  # ГѓГ«Г ГўГ­Г»Г© ГґГ Г©Г« Г± main()
     "src/FromInt32ToFloat.cpp"
     "src/wav.cpp"
 )
 
-# Все заголовочные файлы
+# Г‚Г±ГҐ Г§Г ГЈГ®Г«Г®ГўГ®Г·Г­Г»ГҐ ГґГ Г©Г«Г»
 set(HEADERS
     "include/CMakeAudio.h"
 )
-# Копирование файлов данных
+# ГЉГ®ГЇГЁГ°Г®ГўГ Г­ГЁГҐ ГґГ Г©Г«Г®Гў Г¤Г Г­Г­Г»Гµ
 set(DATA_FILES 
     "data/am_sound_1.dat"
     "data/file1EuropaPlus_1.bin"
 )
 file(COPY ${DATA_FILES} DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
-# Создание исполняемого файла
+# Г‘Г®Г§Г¤Г Г­ГЁГҐ ГЁГ±ГЇГ®Г«Г­ГїГҐГ¬Г®ГЈГ® ГґГ Г©Г«Г 
 add_executable(${PROJECT_NAME} 
     ${SOURCES}
     ${HEADERS} 
 )
 
-# Подключение заголовков
+# ГЏГ®Г¤ГЄГ«ГѕГ·ГҐГ­ГЁГҐ Г§Г ГЈГ®Г«Г®ГўГЄГ®Гў
 target_include_directories(${PROJECT_NAME} PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
