@@ -9,8 +9,8 @@ class DemodulatorTest : public::testing::Test
 protected:
 	virtual void SetUp(void)
 	{
-		dataFloat = { {1.1f,0.2f}, {2.3f, 4.1f}, {6.9f,4.5f} }; // Заполняем член класса
-		dataInt = { {1,2 }, {5, 4}, {7,9}, {6,0} }; // Заполняем член класса
+		dataFloat = { {1.1f,0.2f}, {2.3f, 4.1f}, {6.9f,4.5f} }; 
+		dataInt = { {1,2 }, {5, 4}, {7,9}, {6,0} }; 
 	}
 	std::vector<std::complex<float>> dataFloat;
 	std::vector<std::complex<int>>dataInt;
