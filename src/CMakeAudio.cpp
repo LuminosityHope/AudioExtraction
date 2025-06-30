@@ -35,9 +35,6 @@ int main() {
     }
 }
 
-/*FileManager::SaveSignal(FloatSignal, "FM_sound.bin");
-std::cout << "Successfully demodulated and saved "
-    << FloatSignal.size() << " samples" << std::endl;*/
 
 
 
