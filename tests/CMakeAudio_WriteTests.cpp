@@ -16,7 +16,7 @@ TEST_F(SaveSignalTest, WritesFileCorrectly) {
 
     ASSERT_NO_THROW(FileManager::SaveSignal(data, filename));
 
-    // Проверяем, что файл создан и имеет правильный размер
+   
     std::ifstream file(filename, std::ios::binary | std::ios::ate);
     ASSERT_TRUE(file.is_open());
     EXPECT_EQ(file.tellg(), data.size() * sizeof(float));
