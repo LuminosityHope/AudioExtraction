@@ -28,6 +28,12 @@ set(SOURCES
 # Âñå çàãîëîâî÷íûå ôàéëû
 set(HEADERS
     "include/CMakeAudio.h"
+    "include/Demodulator.h"
+    "include/DownSample.h"
+    "include/FileManager.h"
+    "include/Filter.h"
+    "include/FromInt32ToFloat.h"
+    "include/Wav.h"
 )
 # Êîïèðîâàíèå ôàéëîâ äàííûõ
 set(DATA_FILES 
