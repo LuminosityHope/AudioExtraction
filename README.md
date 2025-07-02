@@ -54,5 +54,6 @@
    ```
 5. Для того ,чтобы открыть приложение необходимо в терминале/консоли прописать путь до него,находясь в корне проекта
    ```bash
-    .\out\build\bin\Debug\CMakeAudio.exe
+    .\out\build\bin\Debug\CMakeAudio.exe(Для Windows)
+    .\out\build\bin\CMakeAudio(Для Linux)
    ```
