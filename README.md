@@ -36,3 +36,8 @@
    git clone --recursive https://github.com/LuminosityHope/AudioExtraction.git
    ```
   Или, в качестве альтернативы, загрузите файл .zip и извлеките его на свой локальный компьютер.
+2. Перейдите в каталог проекта, используя приведенную ниже команду
+
+   ```bash
+   cd CMakeAudio
+   ```
