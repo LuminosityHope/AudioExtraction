@@ -62,9 +62,13 @@
 ### Требования
 - **MATLAB** R2016b++
 - **Базовые пакеты MATLAB**
-1. Для проверки правильной работы программы,используются скрипты MATLAB,которые расположены:
+1. Для проверки правильной работы программы,используются скрипты MATLAB(CheckWav.m и ListenWav.m),которые расположены:
   ```bash
     [AudioExtraction/matlabScripts](https://github.com/LuminosityHope/AudioExtraction/tree/main/matlabScripts)
   ```
 2. Вам необходимо запустить MATLAB и в функции передать адрес WAV файлов,созданных при выполнении программы.
-3. Эти скрипты позволяют прослушать WAV файлы,а также узнать информацию о них(Частота дескритизации,длительность и название файла)
+   ```bash
+     ListenWav('C:\Users\dedhe\source\repos\CMakeAudio\Makarena3.wav')
+   ```
+4. Эти скрипты позволяют прослушать WAV файлы,а также узнать информацию о них(Частота дескритизации,длительность и название файла)
+![image](https://github.com/user-attachments/assets/0fb1434f-9f90-4416-a863-d25bf0dc54c7)
