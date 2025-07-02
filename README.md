@@ -49,7 +49,7 @@
    ```
 4. Для сборки проекта введите следующие команды 
    ```bash
-     cmake -S . -B out/build  # Автоматически создаст папку
+     cmake -S . -B out/build  
      cmake --build out/build 
    ```
 
