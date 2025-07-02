@@ -11,7 +11,7 @@ class FileManager
 public:
 
 	template<typename T>
-	static  std::vector<std::complex<T>> ReadSignal(const std::string& fileName) //Static использую,потому не нужны обьекты класса
+	static  std::vector<std::complex<T>> ReadSignal(const std::string& fileName) //Static РёСЃРїРѕР»СЊР·СѓСЋ,РїРѕС‚РѕРјСѓ РЅРµ РЅСѓР¶РЅС‹ РѕР±СЊРµРєС‚С‹ РєР»Р°СЃСЃР°
 	{
 		std::ifstream file;
 		file.open(fileName, std::ios::binary);
