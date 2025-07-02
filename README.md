@@ -48,10 +48,10 @@
      sudo apt-get install build-essential cmake
    ```
 4. Для сборки проекта введите следующие команды 
-```bash
-  mkdir -p out/build
-  cd out/build
-  cmake ../.. -DCMAKE_BUILD_TYPE=Release
-  make
-```
+   ```bash
+     mkdir -p out/build
+     cd out/build
+     cmake ../.. -DCMAKE_BUILD_TYPE=Release
+     make
+   ```
 
