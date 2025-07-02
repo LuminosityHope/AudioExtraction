@@ -57,3 +57,4 @@
     .\out\build\bin\Debug\CMakeAudio.exe(Для Windows)
     .\out\build\bin\CMakeAudio(Для Linux)
    ```
+6. Если все выполнено верно,то в корне проекта создастся wav файлы,которые можно будет прослушать.
