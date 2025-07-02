@@ -62,7 +62,7 @@
 ### Требования
 - **MATLAB** R2016b++
 - **Базовые пакеты MATLAB**
-1. Для проверки правильной работы программы,используются скрипты MATLAB,которые расположены.
+1. Для проверки правильной работы программы,используются скрипты MATLAB,которые расположены:
   ```bash
     [AudioExtraction/matlabScripts](https://github.com/LuminosityHope/AudioExtraction/tree/main/matlabScripts)
   ```
