@@ -33,7 +33,7 @@
 1. Клонируйте этот репозиторий на свой локальный компьютер, используя приведенную ниже команду:
 
    ```bash
-   git clone --recursive https://github.com/LuminosityHope/AudioExtraction.git
+   git clone  https://github.com/LuminosityHope/AudioExtraction.git
    ```
     Или, в качестве альтернативы, загрузите файл .zip и извлеките его на свой локальный компьютер.
   
