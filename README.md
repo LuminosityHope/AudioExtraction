@@ -42,8 +42,16 @@
    ```bash
      cd CMakeAudio
    ```
-3. Далее в терминале нужно ввести следующую команду для установки необходимых инструментов
+3. Введите в терминале нужно ввести следующую команду для установки необходимых инструментов
    
    ```bash
      sudo apt-get install build-essential cmake
    ```
+4. Для сборки проекта введите следующие команды 
+```bash
+  mkdir -p out/build
+  cd out/build
+  cmake ../.. -DCMAKE_BUILD_TYPE=Release
+  make
+```
+
