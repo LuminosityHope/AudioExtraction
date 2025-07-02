@@ -67,9 +67,9 @@
     [AudioExtraction/matlabScripts](https://github.com/LuminosityHope/AudioExtraction/tree/main/matlabScripts)
   ```
 2. Вам необходимо запустить MATLAB и в функции передать адрес WAV файлов,созданных при выполнении программы.
-   ```bash
-     ListenWav('C:\Users\dedhe\source\repos\CMakeAudio\Makarena3.wav')
-   ```
+ ```bash
+   ListenWav('C:\Users\dedhe\source\repos\CMakeAudio\Makarena3.wav')
+ ```
 4. Эти скрипты позволяют прослушать WAV файлы,а также узнать информацию о них(Частота дескритизации,длительность и название файла)
    
     ![image](https://github.com/user-attachments/assets/fa638711-fac1-4065-9686-e36c3890fbf1)
