@@ -45,7 +45,7 @@
 3. Введите в терминале нужно ввести следующую команду для установки необходимых инструментов.
    
    ```bash
-     sudo apt-get install build-essential cmake (Для Linux)
+     sudo apt-get install build-essential cmake #(Для Linux)
    ```
 4. Для сборки проекта введите следующие команды.
    ```bash
@@ -54,7 +54,7 @@
    ```
 5. Для того ,чтобы открыть приложение в терминале/консоли пропишите путь до него,находясь в корне проекта.
    ```bash
-    .\out\build\bin\Debug\CMakeAudio.exe(Для Windows)
+    .\out\build\bin\Debug\CMakeAudio.exe  #(Для Windows)
     .\out\build\bin\CMakeAudio  #(Для Linux)
    ```
 6. Если все выполнено верно,то в корне проекта создадутся WAV файлы,которые можно будет прослушать.
