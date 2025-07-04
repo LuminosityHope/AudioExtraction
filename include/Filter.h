@@ -1,27 +1,27 @@
 #pragma once
 #include <vector>
 #include <iostream>
-
+enum class TypeFilter { FIR, IIR };
 class Filter {
 public:
-    Filter(size_t windSize, const size_t type);
+    Filter(size_t windSize, TypeFilter type);
     ~Filter();
-
     template <typename T>
     std::vector<T> filtration(const std::vector<T>& signal);
     
 private:
     size_t windowSize;
-    size_t typeFilt; ///1-kih filter,2-bih filter
+    TypeFilter filterType;
+
 };
 
 template <typename T>
 std::vector<T> Filter::filtration(const std::vector<T>& signal) {
     std::vector <T> outPut;
     const double fraction = double(double(1)/ windowSize);
-    switch (typeFilt)
+    switch (filterType)
     {
-    case 1:
+    case TypeFilter::FIR:
         outPut.reserve(signal.size() - windowSize + 1);
         for (size_t i = 0; i <= signal.size() - windowSize; ++i)
         {
@@ -33,7 +33,7 @@ std::vector<T> Filter::filtration(const std::vector<T>& signal) {
             outPut.emplace_back(sum / windowSize);
         }
         return outPut;
-    case 2:
+    case TypeFilter::IIR:
         outPut.reserve(signal.size());
         
         for (size_t i = 0; i < signal.size(); ++i)
@@ -49,6 +49,6 @@ std::vector<T> Filter::filtration(const std::vector<T>& signal) {
         }
         return outPut;
     default:
-        std::cout << "You can choose only 1 (kih-filter) or 2 (bih-filter)";
+        std::cout << "You can choose only FIR or IIR";
     }    
 }
