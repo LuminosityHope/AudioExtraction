@@ -12,7 +12,7 @@ std::vector<float> convertToFloat(const std::vector<int32_t>& signal) {
     float maxVal = static_cast<float>(intmaxVal);
     std::vector<float> result(signal.size());
     for (size_t i = 0; i < signal.size(); ++i) {
-        result[i] = signal[i] / maxVal;
+        result[i] = static_cast<float>(signal[i]) / maxVal;
     }
     return result;
 }
