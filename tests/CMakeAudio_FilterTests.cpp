@@ -12,7 +12,7 @@ protected:
      std::vector<int> testInt;
 };TEST_F(FilterTest,DataCorrectly)
 {
-    Filter filter(3, 1);  
+    Filter filter(3, TypeFilter::FIR);
     auto resultFloat = filter.filtration(testFloat);
     ASSERT_EQ(resultFloat.size(), 4);
     EXPECT_FLOAT_EQ(resultFloat[0], (1.0f + 2.0f + 3.0f) / 3);
@@ -20,7 +20,7 @@ protected:
     EXPECT_FLOAT_EQ(resultFloat[2], (3.0f + 4.0f + 5.0f) / 3);
     EXPECT_FLOAT_EQ(resultFloat[3], (4.0f + 5.0f + 6.0f) / 3);
 
-    Filter filtInt(3, 1);
+    Filter filtInt(3, TypeFilter::FIR);
     auto resultInt = filtInt.filtration(testInt);
     ASSERT_EQ(resultInt.size(), 3);
     EXPECT_EQ(resultInt[0], (10 + 20 + 30) / 3);
