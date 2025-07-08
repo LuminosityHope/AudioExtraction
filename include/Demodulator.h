@@ -27,13 +27,7 @@ public:
             float real = static_cast<float>(signal[i].real());
             float imag = static_cast<float>(signal[i].imag());
             float module = std::sqrtf(real * real + imag * imag);
-
-            if (std::is_integral<T>::value)
-            {
-                module = std::round(module);
-            }
-
-            demodulatedSignal.emplace_back(static_cast<T>(module));
+            demodulatedSignal.emplace_back(module);
         }
 
         return demodulatedSignal;
