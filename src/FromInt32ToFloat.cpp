@@ -2,7 +2,7 @@
 #include <algorithm>
 #include <cmath> 
 
-std::vector<float> convertToFloat(const std::vector<int32_t>& signal) {
+std::vector<float> convertToFloat(const std::vector<float>& signal) {
     if (signal.empty()) {
         return {};
     }
