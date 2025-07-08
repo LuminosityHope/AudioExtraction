@@ -1,4 +1,4 @@
-﻿#include "gtest/gtest.h"
+#include "gtest/gtest.h"
 #include "Demodulator.h" 
 #include <ccomplex>
 #include <math.h>
@@ -20,10 +20,10 @@ TEST_F(DemodulatorTest, DataCorrectlyAM)
 	DemodulatorAM<int> demodInt;
 	auto demod = demodInt.demodulate(dataInt);
 	ASSERT_EQ(demod.size(), dataInt.size());
-	EXPECT_EQ(demod[0], round(sqrt(1 * 1 + 2 * 2)));
-	EXPECT_EQ(demod[1], round(sqrt(5 * 5 + 4 * 4)));
-	EXPECT_EQ(demod[2], round(sqrt(7 * 7 + 9 * 9)));
-	EXPECT_EQ(demod[3], round(sqrt(6 * 6 + 0 * 0)));
+	EXPECT_FLOAT_EQ(demod[0], std::round(std::sqrt(1 * 1 + 2 * 2)));
+	EXPECT_FLOAT_EQ(demod[1], std::round(std::sqrt(5 * 5 + 4 * 4)));
+	EXPECT_FLOAT_EQ(demod[2], std::round(std::sqrt(7 * 7 + 9 * 9)));
+	EXPECT_FLOAT_EQ(demod[3], std::round(std::sqrt(6 * 6 + 0 * 0)));
 
 	DemodulatorAM<float> demodFloat;
 	auto demodFl = demodFloat.demodulate(dataFloat);
