@@ -20,10 +20,10 @@ TEST_F(DemodulatorTest, DataCorrectlyAM)
 	DemodulatorAM<int> demodInt;
 	auto demod = demodInt.demodulate(dataInt);
 	ASSERT_EQ(demod.size(), dataInt.size());
-	EXPECT_FLOAT_EQ(demod[0], std::round(std::sqrt(1 * 1 + 2 * 2)));
-	EXPECT_FLOAT_EQ(demod[1], std::round(std::sqrt(5 * 5 + 4 * 4)));
-	EXPECT_FLOAT_EQ(demod[2], std::round(std::sqrt(7 * 7 + 9 * 9)));
-	EXPECT_FLOAT_EQ(demod[3], std::round(std::sqrt(6 * 6 + 0 * 0)));
+	EXPECT_FLOAT_EQ(demod[0], (std::sqrt(1 * 1 + 2 * 2)));
+	EXPECT_FLOAT_EQ(demod[1], (std::sqrt(5 * 5 + 4 * 4)));
+	EXPECT_FLOAT_EQ(demod[2], (std::sqrt(7 * 7 + 9 * 9)));
+	EXPECT_FLOAT_EQ(demod[3], (std::sqrt(6 * 6 + 0 * 0)));
 
 	DemodulatorAM<float> demodFloat;
 	auto demodFl = demodFloat.demodulate(dataFloat);
