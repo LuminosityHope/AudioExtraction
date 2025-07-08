@@ -26,7 +26,7 @@ public:
         {
             float real = static_cast<float>(signal[i].real());
             float imag = static_cast<float>(signal[i].imag());
-            double module = std::sqrtf(real * real + imag * imag);
+            float module = std::sqrtf(real * real + imag * imag);
 
             if (std::is_integral<T>::value)
             {
