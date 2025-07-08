@@ -28,9 +28,9 @@ TEST_F(DemodulatorTest, DataCorrectlyAM)
 	DemodulatorAM<float> demodFloat;
 	auto demodFl = demodFloat.demodulate(dataFloat);
 	ASSERT_EQ(demodFl.size(), dataFloat.size());
-	EXPECT_FLOAT_EQ(demodFl[0], (sqrtf(1.1f * 1.1f + 0.2f * 0.2f)));
-	EXPECT_FLOAT_EQ(demodFl[1], (sqrtf(2.3f * 2.3f + 4.1f * 4.1f)));
-	EXPECT_FLOAT_EQ(demodFl[2], (sqrtf(6.9f * 6.9f + 4.5f * 4.5f)));
+	EXPECT_FLOAT_EQ(demodFl[0], (std::sqrtf(1.1f * 1.1f + 0.2f * 0.2f)));
+	EXPECT_FLOAT_EQ(demodFl[1], (std::sqrtf(2.3f * 2.3f + 4.1f * 4.1f)));
+	EXPECT_FLOAT_EQ(demodFl[2], (std::sqrtf(6.9f * 6.9f + 4.5f * 4.5f)));
 }
 TEST_F(DemodulatorTest, DataCorrectlyFM)
 {
